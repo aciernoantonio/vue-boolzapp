@@ -48,6 +48,7 @@ img{
     padding: 0.5rem 0.75rem;
     align-items: center;
     justify-content: space-between;
+    border-right: var(--lighter-color);
 }
 
 .user{
@@ -58,7 +59,7 @@ img{
     margin-left: 15px;
 }
 
-.left_nav .options{
+.left_section i{
     color: var(--lighter-color);
 }
 
@@ -81,4 +82,27 @@ img{
 
 .notifications a{
     color: var(--lighter-color);
+}
+
+.searchbar{
+    background-color: var(--nav-color);
+    padding: 0.7rem;
+}
+
+.btn-search{
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.searchbar input{
+    width: 100%;
+    padding-left: 1rem;
+    border: none;
+}
+
+.btn-search{
+    border: none;
+    border-right: 0.5px solid var(--lighter-color);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
