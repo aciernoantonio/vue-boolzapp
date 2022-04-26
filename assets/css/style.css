@@ -93,6 +93,10 @@ img{
     color: var(--lighter-color);
 }
 
+.active{
+    font-size: 0.8rem;
+}
+
 .searchbar{
     background-color: var(--nav-color);
     padding: 0.7rem;
@@ -172,7 +176,7 @@ li > div{
 }
 
 .chat{
-    height: calc(80vh - 66px);
+    height: calc(80vh - 66px - 79.5px);
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
     flex-direction: column;
@@ -205,3 +209,32 @@ li > div{
     flex-direction: column;
     margin-bottom: 10px;
 }
+
+.footer_nav{
+    justify-content: space-between;
+    background-color: var(--chatbar-color);
+    padding: 1rem;
+    align-items: center;
+}
+
+.emoji,
+.audio_message{
+    width: 10%;
+    padding: 0 0.5rem;
+}
+
+.audio_message{
+    text-align: right;
+}
+
+.text_bar{
+    width: 100%;
+}
+
+.text_bar input{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
