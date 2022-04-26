@@ -4,6 +4,11 @@ const app = new Vue({
 
     data: {
 
+        send: `my_text d-flex`,
+        received: `user_text d-flex`,
+
+        activeChat: 0,
+
         contacts: [
             {
                 name: 'Michele',
@@ -167,6 +172,10 @@ const app = new Vue({
                 ],
             }
         ]
+
+    },
+
+    methods: {
 
     }
 
