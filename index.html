@@ -72,245 +72,31 @@
 
                     <ul class="contacts">
 
-                        <li>
-
+                        <li v-for="(contact, index) in contacts">
                             <div class="d-flex">
                                 
                                 <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_1.jpg" alt="">
+                        
+                                    <img :src="contact.avatar" alt="">
                                     <div>
-
+                        
                                         <div>
-                                            <h3>Michele</h3>
+                                            <h3>{{contact.name}}</h3>
                                             <div class="last_message">Ultimo messaggio inviato</div>
                                         </div>
-
+                        
                                     </div>
-
+                        
                                 </div>
-
+                        
                                 <div class="time">
                                     12:00
                                 </div>
                                 
                                     
-                            </div>
-                            
-                            
-                            
-
+                            </div> 
                         </li>
 
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_2.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Fabio</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_3.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Samuele</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_4.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Alessandro B.</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_5.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Alessandro L.</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_6.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Claudia</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_7.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Federico</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
-
-                        <li>
-
-                            <div class="d-flex">
-                                
-                                <div class="info d-flex">
-
-                                    <img src="./assets/img/avatar_8.jpg" alt="">
-                                    <div>
-
-                                        <div>
-                                            <h3>Davide</h3>
-                                            <div class="last_message">Ultimo messaggio inviato</div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="time">
-                                    12:00
-                                </div>
-                                
-                                    
-                            </div>
-                            
-                            
-                            
-
-                        </li>
 
                     </ul>
                     <!-- /.contacts -->
