@@ -44,11 +44,16 @@ img{
 }
 
 .left_nav{
+    border-right: 0.5px solid var(--lighter-color);
+}
+
+.left_nav,
+.right_nav{
     background-color: var(--nav-color);
     padding: 0.5rem 0.75rem;
     align-items: center;
     justify-content: space-between;
-    border-right: var(--lighter-color);
+    
 }
 
 .user{
@@ -59,7 +64,8 @@ img{
     margin-left: 15px;
 }
 
-.left_section i{
+.left_section i,
+.right_section i{
     color: var(--lighter-color);
 }
 
@@ -111,15 +117,23 @@ ul{
     list-style: none;
 }
 
+.contacts{
+    overflow-y: scroll;
+}
+
 .contacts li{
     background-color: white;
     padding: 0.75rem;
     border-bottom: 0.5px solid var(--lighter-color);
 }
 
+.contacts:last-child{
+    border: none;
+    margin-bottom: 3rem;
+}
 
-
-.last_message{
+.last_message,
+.last_access{
     color: var(--lighter-color);
     margin-top: 2px;
     font-size: 0.8rem;
@@ -136,4 +150,14 @@ li > div{
 .time{
     color: var(--lighter-color);
     font-size: 0.75rem;
+}
+
+/* right section */
+
+.right_section{
+    width: 60%;
+}
+
+.user .info{
+    align-items: center;
 }
