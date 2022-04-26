@@ -65,3 +65,20 @@ img{
 .options i{
     margin-right: 10px;
 }
+
+.notifications{
+    background-color: var(--secondary-color);
+    align-items: center;
+}
+
+.notifications i{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    margin: 0.75rem ;
+}
+
+.notifications a{
+    color: var(--lighter-color);
+}
