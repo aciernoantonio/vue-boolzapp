@@ -12,7 +12,7 @@ body{
 
 .container{
     width: 70%;
-    height: 100vh;
+    height: 80vh;
     margin: 2rem auto;
 }
 
@@ -42,6 +42,7 @@ img{
 
 .left_section{
     width: 40%;
+    height: 100%;
 }
 
 .left_nav{
@@ -115,16 +116,21 @@ img{
     border-bottom-left-radius: 2px;
 }
 
+.main_section{
+    height: calc(80vh - 191px);
+    background-color: white;
+    overflow-y: scroll;
+}
+
 ul{
     list-style: none;
 }
 
-.contacts{
-    overflow-y: scroll;
+.contacts li:last-child{
+    border: none;
 }
 
 .contacts li{
-    background-color: white;
     padding: 0.75rem;
     border-bottom: 0.5px solid var(--lighter-color);
 }
@@ -158,6 +164,7 @@ li > div{
 
 .right_section{
     width: 60%;
+    height: 100%;
 }
 
 .user .info{
@@ -165,8 +172,10 @@ li > div{
 }
 
 .chat{
+    height: calc(80vh - 66px);
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
