@@ -12,6 +12,7 @@ body{
 
 .container{
     width: 70%;
+    height: 100vh;
     margin: 2rem auto;
 }
 
@@ -67,6 +68,7 @@ img{
 .left_section i,
 .right_section i{
     color: var(--lighter-color);
+    height: 100%;
 }
 
 .options i{
@@ -161,3 +163,15 @@ li > div{
 .user .info{
     align-items: center;
 }
+
+.chat{
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+    justify-content: space-between;
+}
+
+.my_text{
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
