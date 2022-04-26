@@ -1,5 +1,67 @@
+/* common rules */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.container{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* utility */
+
+:root{
+    --darker-color: #009688;
+    --secondary-color: #8EDAFC;
+    --lighter-color: #B1B1B1;
+    --primary-color: #D5F9BA;
+    --background-color: #D7DBD7;
+    --nav-color: #EAEAEA;
+    --chatbar-color: #F3EEEA;
+
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* left menu */
+
+.left_section{
+    width: 40%;
+}
+
+.left_nav{
+    background-color: var(--nav-color);
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user{
+    align-items: center;
+}
+
+.user_name{
+    margin-left: 15px;
+}
+
+.left_nav .options{
+    color: var(--lighter-color);
+}
+
+.options i{
+    margin-right: 10px;
 }
