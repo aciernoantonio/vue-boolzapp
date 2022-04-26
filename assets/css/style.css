@@ -238,3 +238,7 @@ li > div{
     border-radius: 5px;
 }
 
+.selected{
+    background-color: lightgray;
+}
+

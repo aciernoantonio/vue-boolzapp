@@ -4,9 +4,6 @@ const app = new Vue({
 
     data: {
 
-        send: `my_text d-flex`,
-        received: `user_text d-flex`,
-
         activeChat: 0,
 
         contacts: [
@@ -176,7 +173,11 @@ const app = new Vue({
     },
 
     methods: {
+        showChat(index){
+            this.activeChat = index
 
+            console.log(this.activeChat);
+        }
     }
 
 })

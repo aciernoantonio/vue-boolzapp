@@ -72,7 +72,7 @@
 
                     <ul class="contacts">
 
-                        <li v-for="(contact, index) in contacts">
+                        <li @click="showChat(index)" v-for="(contact, index) in contacts">
                             <div class="d-flex">
                                 
                                 <div class="info d-flex">
@@ -151,12 +151,15 @@
 
                 </header>
 
-                <main v-for="message in messages" class="chat d-flex">
+                <main class="chat d-flex">
 
-                    <div class="my_text d-flex">
+                    <div
+                     v-for="(message) in contacts[activeChat].messages" class="d-flex" 
+                     :class="message.status === `sent` ? `my_text` : `user_text`"
+                     >
 
                         <div class="text_message">{{message.message}}</div>
-                        <div class="time">15:30</div>
+                        <div class="time">{{message.date}}</div>
 
                     </div>
                     
