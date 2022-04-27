@@ -6,6 +6,8 @@ const app = new Vue({
 
         activeChat: 0,
 
+        textMessage: ``,
+
         contacts: [
             {
                 name: 'Michele',
@@ -177,7 +179,39 @@ const app = new Vue({
             this.activeChat = index
 
             console.log(this.activeChat);
+        },
+
+        sendMessage(){
+            console.log(this.textMessage)
+            
+            let newMessage = {
+                date: `10/01/2020 15:50:00`,
+                message: this.textMessage,
+                status: `sent`
+            }
+
+            this.contacts[this.activeChat].messages.push(newMessage)
+
+            this.textMessage = ``
+
+
+            setTimeout(this.answerMessage, 1000)
+            
+        },
+
+        answerMessage(){
+
+            let answer = {
+                date: `10/01/2020 15:50:00`,
+                message: `Ok`,
+                status: `received`
+            }
+
+            this.contacts[this.activeChat].messages.push(answer)
+
+
         }
+
     }
 
 })

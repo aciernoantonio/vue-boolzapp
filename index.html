@@ -159,7 +159,7 @@
                      >
 
                         <div class="text_message">{{message.message}}</div>
-                        <div class="time">{{message.date}}</div>
+                        <div class="time">{{message.date.slice(10, 16)}}</div>
 
                     </div>
                     
@@ -174,7 +174,7 @@
                         </div>
 
                         <div class="text_bar">
-                            <input type="text" placeholder="Scrivi un messaggio">
+                            <input @keyup.enter="sendMessage" v-model="textMessage" type="text" placeholder="Scrivi un messaggio">
                         </div>
 
                         <div class="audio_message">
