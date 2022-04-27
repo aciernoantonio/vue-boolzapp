@@ -117,12 +117,12 @@
                                 
                             <div class="info d-flex">
 
-                                <img src="./assets/img/avatar_1.jpg" alt="">
+                                <img :src="contacts[activeChat].avatar" alt="">
                                 <div>
 
                                     <div>
 
-                                        <h3>Michele</h3>
+                                        <h3>{{contacts[activeChat].name}}</h3>
                                         <div class="last_access">
                                             Ultimo accesso alle ore <span class="time">12:00</span>
  
