@@ -8,6 +8,8 @@ const app = new Vue({
 
         textMessage: ``,
 
+        textName: ``,
+
         contacts: [
             {
                 name: 'Michele',
@@ -208,10 +210,19 @@ const app = new Vue({
             }
 
             this.contacts[this.activeChat].messages.push(answer)
+        },
 
+        searchContact(){
+            this.contacts.forEach((contact) => {
+                /* console.log(contact.name); */
+                if (contact.name.toLowerCase().includes(this.textName.toLowerCase())) {
+                    contact.visible = true;
+                } else {
+                    contact.visible = false;
+                }
+            });
 
         }
-
     }
 
 })

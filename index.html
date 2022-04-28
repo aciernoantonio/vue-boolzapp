@@ -61,7 +61,7 @@
                     <div class="searchbar d-flex">
 
                         <button class="btn-search"><i class="fas fa-search"></i></button>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="textName" @keyup="searchContact" type="text" placeholder="Cerca o inizia una nuova chat">
 
                     </div> 
 
@@ -72,7 +72,7 @@
 
                     <ul class="contacts">
 
-                        <li @click="showChat(index)" v-for="(contact, index) in contacts" :class="index === activeChat ? `selected` : ``">
+                        <li v-if="contact.visible" @click="showChat(index)" v-for="(contact, index) in contacts" :class="index === activeChat ? `selected` : ``">
                             <div class="d-flex">
                                 
                                 <div class="info d-flex">
